@@ -1,0 +1,90 @@
+/* General styles: Arabic font, light gradient background, and the main text color */
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #f4fdf6 0%, #eef9f2 100%);
+    color: #2c3e50;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Set a white background for the header and footer on all pages */
+header, footer {
+    background-color: #ffffff !important;
+}
+/* Soft card: light green border with a smooth transition effect */
+.soft-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(40, 167, 69, 0.15) !important;
+}
+/* On hover: the card lifts slightly and shows a soft green shadow */
+.soft-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .75rem 1.5rem rgba(40, 167, 69, 0.1) !important;
+}
+
+/* Scroll-to-top button: fixed circular button, hidden by default */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top-btn:hover {
+    background-color: #146c43;
+    transform: translateY(-3px);
+}
+/* Dark mode: applied when JavaScript toggles the "dark-mode" class on body */
+body.dark-mode {
+    background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%) !important;
+    color: #e0e0e0 !important;
+}
+
+/* Dark background and gray borders for white elements (header, footer, cards, modals) */
+body.dark-mode header, 
+body.dark-mode footer,
+body.dark-mode .card,
+body.dark-mode .bg-white,
+body.dark-mode .bg-light,
+body.dark-mode .modal-content {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+    border-color: #333333 !important;
+}
+/* Navbar link and brand colors in dark mode */
+body.dark-mode .navbar-light .navbar-brand,
+body.dark-mode .navbar-light .nav-link {
+    color: #e0e0e0 !important;
+}
+/* Lighten gray text so it stays readable on the dark background */
+body.dark-mode .text-muted,
+body.dark-mode .text-secondary {
+    color: #adb5bd !important;
+}
+/* Style input fields and select menus in dark mode */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-color: #444444;
+}
+/* Placeholder text color inside fields in dark mode */
+body.dark-mode .form-control::placeholder {
+    color: #888888;
+}
