@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- Set Arabic language and right-to-left text direction -->
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل فعاليات الجامعة الافتراضية</title>
+<!-- Use Bootstrap RTL for ready-made styles supporting Arabic and responsive layouts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<!-- Use Cairo font to improve Arabic text readability and visual consistency -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Link an external CSS file to customize the website styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+    <!-- Use Bootstrap Navbar to create a responsive navigation menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center fw-bold text-success" href="index.html">
+                    <img src="assets/img/logo.jfif" alt="شعار الجامعة" width="40" height="40" class="me-2 ms-2">
+                    <span>دليل الفعاليات</span>
+                </a>
+    <!-- Display a toggle button on small screens for easier navigation -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active text-success fw-bold" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="event.html">تفاصيل الفعالية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-4 bg-transparent border-bottom mb-4">
+            <div class="container text-center">
+                <h1 class="fw-bold mb-2 text-success">دليل فعاليات الجامعة الافتراضية</h1>
+                <p class="text-secondary lead mb-0">انضم إلى فعالياتنا الأكاديمية والتطويرية، وابدأ رحلتك في التعلّم واكتساب المهارات.</p>
+            </div>
+        </section>
+       <!-- Use Bootstrap Grid to display team members in responsive cards -->
+        <section class="container mb-5">
+            <h3 class="h5 fw-bold mb-3 border-bottom pb-2 text-success">فريق العمل </h3>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="p-3 bg-white border rounded shadow-sm soft-card">
+                        <h6 class="fw-bold mb-1">رواء أيمن أسعد</h6>
+                        <small class="text-muted">ID: rawaa_303171_c7</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-white border rounded shadow-sm soft-card">
+                        <h6 class="fw-bold mb-1">آيسن محمد أيهم بكتمر</h6>
+                        <small class="text-muted">ID: Aysin_346137_c4</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-white border rounded shadow-sm soft-card">
+                        <h6 class="fw-bold mb-1">محمد فيصل تللو</h6>
+                        <small class="text-muted">ID: mohammed_faisal_344336_c10</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-white border rounded shadow-sm soft-card">
+                        <h6 class="fw-bold mb-1">الهام غسان فضه</h6>
+                        <small class="text-muted">ID: elham_349601_c8</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-white border rounded shadow-sm soft-card">
+                        <h6 class="fw-bold mb-1">أحمد الشحنة البستاني</h6>
+                        <small class="text-muted">ID: ahmad_291535_c8</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+       <section class="container mb-5">
+        <h3 class="h5 fw-bold mb-4 border-bottom pb-2">فعاليات بارزة هذا الأسبوع</h3>
+        <!-- Use Bootstrap Carousel to display featured events in an automatic slideshow -->
+        <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <!-- Add indicators for direct navigation between carousel slides -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="الفعالية الأولى"></button>
+                <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1" aria-label="الفعالية الثانية"></button>
+            </div>
+            <!-- Main container holding the event slides and images -->
+            <div class="carousel-inner rounded shadow-sm">
+
+                <div class="carousel-item active">
+                    <img src="assets/img/Volunteer1.jpg" class="d-block w-100" alt="ملتقى المبادرات التطوعية" style="height: 380px; object-fit: contain;">
+                    <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
+                        <h5 class="fw-bold"> ملتقى المبادرات التطوعية</h5>
+                        <p class="small mb-2">عرض المبادرات الطلابية والتطوعية في مجالات التعليم ومساعدة المجتمع والبيئة، وتشجيع الطلاب على المشاركة المجتمعية. </p>
+                        <p class="small mb-2">12 تشرين الثاني 2026 - حلب</p>
+                        <a href="event.html#volunteer-forum" class="btn btn-success btn-sm">التفاصيل</a>
+                    </div>
+                </div>
+             
+                <div class="carousel-item">
+                    <img src="assets/img/graduation.jpg" class="d-block w-100" alt="حفل التخرج السنوي" style="height: 380px; object-fit: contain;">
+                    <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
+                        <h4 class="fw-bold">حفل التخرج السنوي لعام 2026</h4>
+                        <p class="small mb-2"> حفل سنوي للاحتفال بخريجي الجامعة الافتراضية السورية لعام 2026 من مختلف البرامج والاختصاصات، مع تكريم الطلاب المتفوقين.</p>
+                        <p class="small mb-2">15 تشرين الثاني 2026 - دمشق</p>
+                        <a href="event.html#graduation" class="btn btn-success btn-sm">التفاصيل</a>
+                    </div>
+                </div>
+             </div>
+
+             <!-- Add navigation controls to move manually between slides -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">السابق</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">التالي</span>
+            </button>
+        </div>
+      </section>
+
+
+
+        <section class="container mb-4">
+            <h3 class="h5 fw-bold mb-3 border-bottom pb-2 text-success">تصنيفات سريعة</h3>
+            <!-- Interactive category buttons used to filter events by type with JavaScript -->
+            <div class="d-flex flex-wrap gap-2" id="homeCategoryFilter">
+                <button type="button" data-filter="all" class="btn btn-success btn-sm filter-btn active">جميع الفعاليات</button>
+                <button type="button" data-filter="academic" class="btn btn-outline-success btn-sm filter-btn">فعاليات أكاديمية ومعرفية</button>
+                <button type="button" data-filter="career" class="btn btn-outline-success btn-sm filter-btn">تطوير مهني</button>
+                <button type="button" data-filter="community" class="btn btn-outline-success btn-sm filter-btn">ثقافة ومجتمع</button>
+                <button type="button" data-filter="technology" class="btn btn-outline-success btn-sm filter-btn">تكنولوجيا وابتكار</button>
+            </div>
+        </section>
+
+        <section class="container mb-5">
+            <h3 class="h5 fw-bold mb-3 border-bottom pb-2 text-success">أحدث الفعاليات </h3>
+            
+           <!-- Use Bootstrap Grid to display event cards in a responsive layout -->
+            <div class="row g-4" id="latestEventsGrid">
+            <!-- Set each event category using data-category for JavaScript filtering -->
+                <div class="col-md-4 event-card-item" data-category="academic">
+                    <div class="card h-100 border shadow-sm soft-card bg-white">
+
+                    <!-- Use object-fit: cover to fill the image area while maintaining consistent card layouts -->
+                        <img src="assets/img/Research3.jpg" class="card-img-top" alt="ندوة البحث العلمي" style="height: 190px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success bg-opacity-10 text-success mb-2">فعاليات أكاديمية ومعرفية</span>
+                            <h5 class="card-title fw-bold">ندوة مهارات البحث العلمي</h5>
+                            <p class="card-text text-muted small">تعريف الطلاب بأساليب إعداد البحوث الجامعية والتوثيق العلمي.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                            <small class="text-muted">21 تشرين الثاني 2026</small>
+                            <a href="event.html?id=research-seminar" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 event-card-item" data-category="career">
+                    <div class="card h-100 border shadow-sm soft-card bg-white">
+                        <img src="assets/img/cv.jpg" class="card-img-top" alt="ورشة السيرة الذاتية" style="height: 190px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success bg-opacity-10 text-success mb-2">تطوير مهني</span>
+                            <h5 class="card-title fw-bold">ورشة إعداد السيرة الذاتية</h5>
+                            <p class="card-text text-muted small">تدريب الطلاب والخريجين على كتابة سيرة ذاتية احترافية.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                            <small class="text-muted">28 تشرين الثاني 2026</small>
+                            <a href="event.html?id=cv-workshop" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 event-card-item" data-category="community">
+                    <div class="card h-100 border shadow-sm soft-card bg-white">
+                        <img src="assets/img/Heritage1.jpg" class="card-img-top" alt="معرض التراث" style="height: 190px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success bg-opacity-10 text-success mb-2">ثقافة ومجتمع</span>
+                            <h5 class="card-title fw-bold">معرض التراث السوري والحرف</h5>
+                            <p class="card-text text-muted small">التعريف بتنوع التراث الثقافي السوري والحرف التقليدية.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                            <small class="text-muted">3 كانون الأول 2026</small>
+                            <a href="event.html?id=heritage-exhibition" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+             
+
+                <div class="col-md-4 event-card-item" data-category="technology">
+                    <div class="card h-100 border shadow-sm soft-card bg-white">
+                        <img src="assets/img/ai-workshop.jpg" class="card-img-top" alt="ورشة الذكاء الاصطناعي" style="height: 190px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success bg-opacity-10 text-success mb-2">تكنولوجيا وابتكار</span>
+                            <h5 class="card-title fw-bold">ورشة الذكاء الاصطناعي وتطبيقاته</h5>
+                            <p class="card-text text-muted small">ورشة تفاعلية للتعرّف إلى أدوات الذكاء الاصطناعي واستخداماتها.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                            <small class="text-muted">12 كانون الأول 2026</small>
+                            <a href="event.html?id=ai-workshop" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 event-card-item" data-category="technology">
+                    <div class="card h-100 border shadow-sm soft-card bg-white">
+                        <img src="assets/img/technology-exhibition.jpg" class="card-img-top" alt="معرض التكنولوجيا" style="height: 190px; object-fit: cover;">
+                        <div class="card-body">
+                            <span class="badge bg-success bg-opacity-10 text-success mb-2">تكنولوجيا وابتكار</span>
+                            <h5 class="card-title fw-bold">معرض التكنولوجيا والابتكار</h5>
+                            <p class="card-text text-muted small">عرض المشاريع الطلابية في البرمجة والذكاء الاصطناعي.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                            <small class="text-muted">  18 كانون الأول 2026</small>
+                            <a href="event.html?id=tech-exhibition" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+
+    <footer class="bg-white border-top py-4 text-center text-muted">
+        <div class="container">
+            <p class="fw-bold mb-2">دليل فعاليات الجامعة الافتراضية</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
+                <a href="contact.html" class="text-decoration-none text-muted">اتصل بنا</a>
+                <a href="https://www.svuonline.org" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">موقع الجامعة</a>
+                <a href="https://www.facebook.com/share/1KpsExHP4W/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">فيسبوك</a>
+            </div>
+            <p class="mb-0 small">جميع الحقوق محفوظة &copy; 2026 - دليل فعاليات الجامعة الافتراضية</p>
+        </div>
+    </footer>
+
+<!-- Load Bootstrap JavaScript to enable interactive components such as the navbar and carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link the external JavaScript file to handle website functionality and interactions -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

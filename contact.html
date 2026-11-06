@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | دليل فعاليات الجامعة الافتراضية</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center fw-bold text-success" href="index.html">
+                    <img src="assets/img/logo.jfif" alt="شعار الجامعة" width="40" height="40" class="me-2 ms-2">
+                    <span>دليل الفعاليات</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="فتح قائمة التنقل">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="event.html">تفاصيل الفعالية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link active text-success fw-bold" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+<!-- Contact form for receiving visitors' inquiries and messages -->
+               <div class="bg-white p-4 border rounded shadow-sm soft-card mb-4">
+                    <h1 class="text-center mb-3 text-success fw-bold">اتصل بنا </h1>
+                    <p class="text-center text-muted mb-4">
+                        يسعدنا استقبال استفساراتكم وملاحظاتكم حول فعاليات الجامعة والأنشطة المختلفة.
+                    </p>
+
+                    <div id="formAlert" class="alert d-none" role="alert"></div>
+
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-bold">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="name" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label fw-bold">الرسالة</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="اكتب رسالتك أو استفسارك هنا..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">إرسال الرسالة</button>
+                    </form>
+                </div>
+
+<!-- Display contact information, address, communication methods, and external links -->
+              <div class="bg-white p-4 border rounded shadow-sm soft-card">
+                    <h2 class="h5 mb-4 text-success fw-bold border-bottom pb-2">طرق التواصل البديلة والمعلومات العامة</h2>
+                    
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="p-3 border rounded bg-light text-center h-100">
+                                <span class="fs-3 text-success d-block mb-2">📍</span>
+                                <h6 class="fw-bold mb-1">العنوان الرئيسي</h6>
+                                <p class="text-muted small mb-0">دمشق - استراد المزة، مقر الجامعة الافتراضية السورية.</p>
+                                 <p class="text-muted small mb-0">أوقات الدوام من 9 صباحاً حتى الرابعة ظهراً .</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="p-3 border rounded bg-light text-center h-100">
+                                <span class="fs-3 text-success d-block mb-2">📞</span>
+                                <h6 class="fw-bold mb-1">رقم الهاتف</h6>
+                                <p class="text-muted small mb-0" dir="ltr">+963 11 2345678</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="p-3 border rounded bg-light text-center h-100">
+                                <span class="fs-3 text-success d-block mb-2">✉️</span>
+                                <h6 class="fw-bold mb-1">البريد الإلكتروني</h6>
+                                <p class="text-muted small mb-0">info@svuevents.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-3 border-top text-center">
+                        <h6 class="fw-bold mb-2 text-success">روابط مفيدة</h6>
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="https://www.svuonline.org" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-success">
+                                🌐 موقع الجامعة الافتراضية السورية
+                            </a>
+                            <a href="https://www.facebook.com/share/1KpsExHP4W/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-success">
+                                📘 زيارة صفحة فيسبوك
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-top py-4 text-center text-muted">
+        <div class="container">
+            <p class="fw-bold mb-2">دليل فعاليات الجامعة الافتراضية</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
+                <a href="contact.html" class="text-decoration-none text-muted">اتصل بنا</a>
+                <a href="https://www.svuonline.org" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">موقع الجامعة</a>
+                <a href="https://www.facebook.com/share/1KpsExHP4W/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">فيسبوك</a>
+            </div>
+            <p class="mb-0 small">جميع الحقوق محفوظة &copy; 2026 - دليل فعاليات الجامعة الافتراضية</p>
+        </div>
+    </footer>
+    <!-- Load Bootstrap and the JavaScript file responsible for the website's interactive features -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

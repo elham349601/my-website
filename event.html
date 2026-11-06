@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الفعالية | دليل فعاليات الجامعة الافتراضية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center fw-bold text-success" href="index.html">
+                    <img src="assets/img/logo.jfif" alt="شعار الجامعة" width="40" height="40" class="me-2 ms-2">
+                    <span>دليل الفعاليات</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link active text-success fw-bold" href="event.html">تفاصيل الفعالية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+
+        <div class="text-center mb-5">
+            <h1 class="fw-bold text-success display-5">تفاصيل الفعالية</h1>
+            <p class="text-muted">استعرض كافة تفاصيل ومعلومات الفعالية التي تناسب اختيارك  </p>
+        </div>
+
+<!-- Contains all event details; JavaScript displays the selected event based on the ID in the page URL -->
+          <div id="singleEventContainer">
+          <div class="event-detail-section" id="research-seminar" style="display: none;">
+      <div class="bg-white p-4 rounded shadow-sm border mb-4 soft-card">
+          <span class="badge bg-success bg-opacity-10 text-success mb-2">فعاليات أكاديمية ومعرفية</span>
+          <h2 class="fw-bold text-success mb-3">ندوة مهارات البحث العلمي والكتابة الأكاديمية</h2>
+          <p class="text-secondary mb-4">تعريف الطلاب بأساليب إعداد البحوث الجامعية، والتوثيق العلمي، واستخدام المصادر والمراجع بطريقة صحيحة.</p>
+       <div class="row mb-4 align-items-center">
+              <div class="col-md-6">
+                  <p class="mb-2"><strong>📅 التاريخ:</strong> 21 تشرين الثاني 2026</p>
+                  <p class="mb-2"><strong>📍 الموقع والمحافظة:</strong> حمص – جامعة حمص – كلية التربية</p>
+              </div>
+              <div class="col-md-6 text-md-end">
+                  <button class="btn btn-success btn-sm me-1 mb-2" data-bs-toggle="modal" data-bs-target="#bookingModal">🎟️ احجز مقعدك</button>
+                  <button class="btn btn-outline-success btn-sm me-1 mb-2" onclick="alert('تمت إضافة الفعالية إلى التقويم بنجاح!')">📅 أضف للتقويم</button>
+                  <button class="btn btn-outline-secondary btn-sm mb-2" onclick="alert('تم نسخ رابط الفعالية للمشاركة!')">🔗 شارك</button>
+              </div>
+       </div>
+         <h4 class="h5 fw-bold text-success mb-2">التفاصيل</h4>
+          <p class="text-muted">ندوة تهدف إلى تعريف الطلاب بأساليب إعداد البحوث الجامعية والتوثيق العلمي، واستخدام المصادر والمراجع بطريقة صحيحة. تُعقد في قاعات الجامعة بمشاركة أساتذة مختصين. تركز على البحث العلمي كأداة لخدمة قضايا المجتمع وإعادة الإعمار. تشجع الطلاب على اكتساب مهارات البحث والكتابة الأكاديمية. وتُعد فرصة لتبادل الخبرات بين الطلاب والأكاديميين.</p>
+          <!-- Each event has its own photo gallery displayed using a responsive Bootstrap grid -->
+          <h4 class="h5 fw-bold text-success mt-4 mb-3">معرض صور الفعالية</h4>
+          <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Research1.jpg" class="img-fluid rounded" alt="صورة الفعالية 1" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Research2.jpg" class="img-fluid rounded" alt="صورة الفعالية 2" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Research3.jpg" class="img-fluid rounded" alt="صورة الفعالية 3" style="height: 180px; width: 100%; object-fit: contain;">
+                  </div>
+              </div>
+          </div>
+         <h4 class="h5 fw-bold text-success mb-3">موقع انعقاد الفعالية (خريطة الموقع)</h4>
+          <div class="border rounded p-2 bg-light text-center">
+              <img src="assets/img/hims.jpg" class="img-fluid rounded" alt="خريطة الموقع" style="max-height: 500px; width: 100%; object-fit: contain;">
+              <small class="text-muted d-block mt-2">خريطة توضيحية لمقر انعقاد الندوة في جامعة حمص</small>
+          </div>
+      </div>
+          <section class="mt-5 pt-3 border-top">
+            <h4 class="h6 fw-bold mb-3 text-success">فعاليات ذات صلة</h4>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card h-100 border shadow-sm bg-light">
+                        <div class="card-body p-3">
+                            <h6 class="card-title fw-bold small">حفل التخرج السنوي</h6>
+                            <p class="card-text text-muted small">احتفال بخريجي الجامعة الافتراضية السورية لعام 2026.</p>
+                            <a href="event.html?id=graduation" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border shadow-sm bg-light">
+                        <div class="card-body p-3">
+                            <h6 class="card-title fw-bold small">ورشة إعداد السيرة الذاتية</h6>
+                            <p class="card-text text-muted small">تدريب الطلاب والخريجين على كتابة سيرة ذاتية احترافية.</p>
+                            <a href="event.html?id=cv-workshop" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+           </div>
+
+            <div class="event-detail-section" id="graduation" style="display: none;">
+                <div class="bg-white p-4 rounded shadow-sm border mb-4 soft-card">
+                    <span class="badge bg-success bg-opacity-10 text-success mb-2">فعاليات أكاديمية ومعرفية</span>
+                    <h2 class="fw-bold text-success mb-3">حفل التخرج السنوي لعام 2026</h2>
+                    <p class="text-secondary mb-4">حفل سنوي للاحتفال بخريجي الجامعة الافتراضية السورية لعام 2026 وتكريم المتفوقين.</p>
+                <div class="row mb-4 align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>📅 التاريخ:</strong> 15 تشرين الثاني 2026</p>
+                            <p class="mb-2"><strong>📍 الموقع والمحافظة:</strong> دمشق - مقر الجامعة الافتراضية - استراد المزة</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <button class="btn btn-success btn-sm me-1 mb-2" data-bs-toggle="modal" data-bs-target="#bookingModal">🎟️ احجز مقعدك</button>
+                            <button class="btn btn-outline-success btn-sm me-1 mb-2" onclick="alert('تمت إضافة الفعالية إلى التقويم بنجاح!')">📅 أضف للتقويم</button>
+                            <button class="btn btn-outline-secondary btn-sm mb-2" onclick="alert('تم نسخ رابط الفعالية للمشاركة!')">🔗 شارك</button>
+                        </div>
+                    </div>
+                    <h4 class="h5 fw-bold text-success mb-2">تفاصيل الفعالية</h4>
+                    <p class="text-muted">حفل سنوي للاحتفال بخريجي الجامعة الافتراضية السورية لعام 2026 من مختلف البرامج والاختصاصات. يهدف الحفل إلى تقدير الجهد الذي بذله الطلاب خلال مسيرتهم الدراسية والاحتفاء بإنجازاتهم في الوصول إلى مرحلة التخرج، كما يتضمن تكريم الطلاب المتفوقين.</p>
+                    <h4 class="h5 fw-bold text-success mt-4 mb-3">معرض صور الفعالية</h4>
+          <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/graduation_1.jpg" class="img-fluid rounded" alt="صورة الفعالية 1" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/graduation_2.jpg" class="img-fluid rounded" alt="صورة الفعالية 2" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/graduation_3.jpg" class="img-fluid rounded" alt="صورة الفعالية 3" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+          </div>
+          <h4 class="h5 fw-bold text-success mb-3">موقع انعقاد الفعالية (خريطة الموقع)</h4>
+          <div class="border rounded p-2 bg-light text-center">
+              <img src="assets/img/Damascus.jfif" class="img-fluid rounded" alt="خريطة الموقع" style="max-height: 500px; width: 100%; object-fit: contain;">
+              <small class="text-muted d-block mt-2">خريطة توضيحية لمقر إقامة الحفل في مقر الجامعة الافتراضية في دمشق </small>
+                       </div>
+                </div>
+           <section class="mt-5 pt-3 border-top">
+            <h4 class="h6 fw-bold mb-3 text-success">فعاليات ذات صلة</h4>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card h-100 border shadow-sm bg-light">
+                        <div class="card-body p-3">
+                            <h6 class="card-title fw-bold small">ندوة البحث العلمي </h6>
+                            <p class="card-text text-muted small">تعريف الطلاب بأساليب إعداد البحوث الجامعية والتوثيق العلمي.</p>
+                            <a href="event.html?id=research-seminar" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border shadow-sm bg-light">
+                        <div class="card-body p-3">
+                            <h6 class="card-title fw-bold small">ورشة إعداد السيرة الذاتية</h6>
+                            <p class="card-text text-muted small">تدريب الطلاب والخريجين على كتابة سيرة ذاتية احترافية.</p>
+                            <a href="event.html?id=cv-workshop" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+           </div>
+
+            <div class="event-detail-section" id="cv-workshop" style="display: none;">
+                <div class="bg-white p-4 rounded shadow-sm border mb-4 soft-card">
+                    <span class="badge bg-success bg-opacity-10 text-success mb-2">تطوير مهني</span>
+                    <h2 class="fw-bold text-success mb-3">ورشة إعداد السيرة الذاتية والاستعداد لمقابلات العمل</h2>
+                    <p class="text-secondary mb-4">تدريب الطلاب والخريجين على كتابة سيرة ذاتية احترافية والاستعداد للمقابلات الوظيفية.</p>
+                    
+                    <div class="row mb-4 align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>📅 التاريخ:</strong> 28 تشرين الثاني 2026</p>
+                            <p class="mb-2"><strong>📍 الموقع والمحافظة:</strong>  حماة- الشارع الرئيسسي - مقابل ركن الطيبات</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <button class="btn btn-success btn-sm me-1 mb-2" data-bs-toggle="modal" data-bs-target="#bookingModal">🎟️ احجز مقعدك</button>
+                            <button class="btn btn-outline-success btn-sm me-1 mb-2" onclick="alert('تمت إضافة الفعالية إلى التقويم بنجاح!')">📅 أضف للتقويم</button>
+                            <button class="btn btn-outline-secondary btn-sm mb-2" onclick="alert('تم نسخ رابط الفعالية للمشاركة!')">🔗 شارك</button>
+                        </div>
+                    </div>
+                    <h4 class="h5 fw-bold text-success mb-2">تفاصيل الفعالية</h4>
+                    <p class="text-muted">   ورشة تدريبية للطلاب والخريجين على كتابة سيرة ذاتية احترافية والاستعداد لمقابلات العمل. 
+                    تهدف إلى تعزيز فرص التوظيف لدى الشباب السوري في سوق العمل المحلي والإقليمي. تتضمن الورشة تمارين عملية ومحاكاة لمقابلات وظيفية، وتُعد خطوة نحو تمكين الخريجين من الاندماج في سوق العمل.</p>
+                    <h4 class="h5 fw-bold text-success mt-4 mb-3">معرض صور الفعالية</h4>
+          <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/cv1.jpg" class="img-fluid rounded" alt="صورة الفعالية 1" style="height: 300px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/cv2.jfif" class="img-fluid rounded" alt="صورة الفعالية 2" style="height: 300px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/cv3.jfif" class="img-fluid rounded" alt="صورة الفعالية 3" style="height: 300px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+          </div>
+          <h4 class="h5 fw-bold text-success mb-3">موقع انعقاد الفعالية (خريطة الموقع)</h4>
+          <div class="border rounded p-2 bg-light text-center">
+              <img src="assets/img/hama.jpg" class="img-fluid rounded" alt="خريطة الموقع" style="max-height: 500px; width: 100%; object-fit: contain;">
+              <small class="text-muted d-block mt-2">خريطة توضيحية لمقر انعقاد الورشة في حماة الشارع الرئيسي  </small>
+                    </div>
+                </div>
+            <section class="mt-5 pt-3 border-top">
+                <h4 class="h6 fw-bold mb-3 text-success">فعاليات ذات صلة</h4>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100 border shadow-sm bg-light">
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold small">ندوة البحث العلمي </h6>
+                                <p class="card-text text-muted small">تعريف الطلاب بأساليب إعداد البحوث الجامعية والتوثيق العلمي.</p>
+                                <a href="event.html?id=research-seminar" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="card h-100 border shadow-sm bg-light">
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold small">حفل التخرج السنوي</h6>
+                                <p class="card-text text-muted small">احتفال بخريجي الجامعة الافتراضية السورية لعام 2026.</p>
+                                <a href="event.html?id=graduation" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+            </div>
+
+
+            <div class="event-detail-section" id="heritage-exhibition" style="display: none;">
+                <div class="bg-white p-4 rounded shadow-sm border mb-4 soft-card">
+                    <span class="badge bg-success bg-opacity-10 text-success mb-2">ثقافة ومجتمع</span>
+                    <h2 class="fw-bold text-success mb-3">معرض التراث السوري والحرف التقليدية</h2>
+                    <p class="text-secondary mb-4">التعريف بتنوع التراث الثقافي السوري والحرف التقليدية والموروث المعماري.</p>
+                    
+                    <div class="row mb-4 align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>📅 التاريخ:</strong> 3 كانون الأول 2026</p>
+                            <p class="mb-2"><strong>📍 الموقع والمحافظة:</strong> اللاذقية - جامعة اللاذقية</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <button class="btn btn-success btn-sm me-1 mb-2" data-bs-toggle="modal" data-bs-target="#bookingModal">🎟️ احجز مقعدك</button>
+                            <button class="btn btn-outline-success btn-sm me-1 mb-2" onclick="alert('تمت إضافة الفعالية إلى التقويم بنجاح!')">📅 أضف للتقويم</button>
+                            <button class="btn btn-outline-secondary btn-sm mb-2" onclick="alert('تم نسخ رابط الفعالية للمشاركة!')">🔗 شارك</button>
+                        </div>
+                    </div>
+                    <h4 class="h5 fw-bold text-success mb-2">تفاصيل الفعالية</h4>
+                    <p class="text-muted">معرض يُعرّف بتنوع التراث الثقافي السوري والحرف التقليدية والموروث المعماري. يهدف إلى تعزيز الاعتزاز بالهوية الثقافية السورية والحفاظ عليها بالتعاون مع حرفيين محليين لدعم الاقتصاد المحلي.</p>
+                    <h4 class="h5 fw-bold text-success mt-4 mb-3">معرض صور الفعالية</h4>
+          <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Heritage2.jpg" class="img-fluid rounded" alt="صورة الفعالية 1" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Heritage3.jpg" class="img-fluid rounded" alt="صورة الفعالية 2" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Heritage4.jpg" class="img-fluid rounded" alt="صورة الفعالية 3" style="height: 180px; width: 100%; object-fit: contain;">
+                  </div>
+              </div>
+          </div>
+          <h4 class="h5 fw-bold text-success mb-3">موقع انعقاد الفعالية (خريطة الموقع)</h4>
+          <div class="border rounded p-2 bg-light text-center">
+              <img src="assets/img/Latakia.jpg" class="img-fluid rounded" alt="خريطة الموقع" style="max-height: 500px; width: 100%; object-fit: contain;">
+              <small class="text-muted d-block mt-2">خريطة توضيحية لمقر انعقاد الفعالية في اللاذقية - جامعة اللالذقية </small>
+                  </div>
+                </div>
+            <section class="mt-5 pt-3 border-top">
+                <h4 class="h6 fw-bold mb-3 text-success">فعاليات ذات صلة</h4>
+                <div class="row g-3">
+                   <div class="col-md-4">
+                        <div class="card h-100 border shadow-sm bg-light">
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold small">ملتقى المبادرات التطوعية وخدمة المجتمع</h6>
+                                <p class="card-text text-muted small">عرض المبادرات الطلابية والتطوعية في مجالات التعليم ومساعدة المجتمع والبيئة.</p>
+                                <a href="event.html?id=volunteer-forum" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+            </div>
+
+
+            <div class="event-detail-section" id="volunteer-forum" style="display: none;">
+                <div class="bg-white p-4 rounded shadow-sm border mb-4 soft-card">
+                    <span class="badge bg-success bg-opacity-10 text-success mb-2">ثقافة ومجتمع</span>
+                    <h2 class="fw-bold text-success mb-3">ملتقى المبادرات التطوعية وخدمة المجتمع</h2>
+                    <p class="text-secondary mb-4">عرض المبادرات الطلابية والتطوعية في مجالات التعليم ومساعدة المجتمع والبيئة.</p>
+                      <div class="row mb-4 align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>📅 التاريخ:</strong> 12 تشرين الثاني 2026</p>
+                            <p class="mb-2"><strong>📍 الموقع والمحافظة:</strong> حلب - جامعة حلب</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <button class="btn btn-success btn-sm me-1 mb-2" data-bs-toggle="modal" data-bs-target="#bookingModal">🎟️ احجز مقعدك</button>
+                            <button class="btn btn-outline-success btn-sm me-1 mb-2" onclick="alert('تمت إضافة الفعالية إلى التقويم بنجاح!')">📅 أضف للتقويم</button>
+                            <button class="btn btn-outline-secondary btn-sm mb-2" onclick="alert('تم نسخ رابط الفعالية للمشاركة!')">🔗 شارك</button>
+                        </div>
+                    </div>
+                    <h4 class="h5 fw-bold text-success mb-2">تفاصيل الفعالية</h4>
+                    <p class="text-muted">ملتقى لعرض المبادرات الطلابية والتطوعية في مجالات التعليم ومساعدة المجتمع والبيئة. يهدف إلى تشجيع الطلاب على المشاركة المجتمعية وتعزيز ثقافة العمل التطوعي، ويُسلّط الضوء على دور الشباب في إعادة بناء المجتمع.</p>
+                  
+                       <h4 class="h5 fw-bold text-success mt-4 mb-3">معرض صور الفعالية</h4>
+          <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Volunteer5.jpg" class="img-fluid rounded" alt="صورة الفعالية 1" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Volunteer2.jpg" class="img-fluid rounded" alt="صورة الفعالية 2" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/Volunteer3.jpg" class="img-fluid rounded" alt="صورة الفعالية 3" style="height: 180px; width: 100%; object-fit: contain;">
+                  </div>
+              </div>
+          </div>
+          <h4 class="h5 fw-bold text-success mb-3">موقع انعقاد الفعالية (خريطة الموقع)</h4>
+          <div class="border rounded p-2 bg-light text-center">
+              <img src="assets/img/Aleppo.jpg" class="img-fluid rounded" alt="خريطة الموقع" style="max-height: 500px; width: 100%; object-fit: contain;">
+              <small class="text-muted d-block mt-2">خريطة توضيحية لمقر اقامة الفعالية في حلب - جامعة حلب </small>
+                </div>
+                </div>
+            <section class="mt-5 pt-3 border-top">
+                <h4 class="h6 fw-bold mb-3 text-success">فعاليات ذات صلة</h4>
+                <div class="row g-3">
+                   <div class="col-md-4">
+                        <div class="card h-100 border shadow-sm bg-light">
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold small">معرض التراث السوري والحرف</h6>
+                                <p class="card-text text-muted small">  التعريف بتنوع التراث الثقافي السوري والحرف التقليدية والموروث المعماري</p>
+                                <a href="event.html?id=heritage-exhibition" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+            </div>
+
+
+
+            <div class="event-detail-section" id="ai-workshop" style="display: none;">
+                <div class="bg-white p-4 rounded shadow-sm border mb-4 soft-card">
+                    <span class="badge bg-success bg-opacity-10 text-success mb-2">تكنولوجيا وابتكار</span>
+                    <h2 class="fw-bold text-success mb-3">ورشة عمل: الذكاء الاصطناعي وتطبيقاته</h2>
+                    <p class="text-secondary mb-4">ورشة تفاعلية للتعرّف إلى أدوات الذكاء الاصطناعي واستخداماتها الأكاديمية.</p>
+                    
+                    <div class="row mb-4 align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>📅 التاريخ:</strong> 12 كانون الأول 2026</p>
+                            <p class="mb-2"><strong>📍 الموقع والمحافظة:</strong> دمشق – الهمك – كلية الهندسة المعلوماتية</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <button class="btn btn-success btn-sm me-1 mb-2" data-bs-toggle="modal" data-bs-target="#bookingModal">🎟️ احجز مقعدك</button>
+                            <button class="btn btn-outline-success btn-sm me-1 mb-2" onclick="alert('تمت إضافة الفعالية إلى التقويم بنجاح!')">📅 أضف للتقويم</button>
+                            <button class="btn btn-outline-secondary btn-sm mb-2" onclick="alert('تم نسخ رابط الفعالية للمشاركة!')">🔗 شارك</button>
+                        </div>
+                    </div>
+
+                    <h4 class="h5 fw-bold text-success mb-2">تفاصيل الفعالية</h4>
+                    <p class="text-muted">ورشة تفاعلية للتعرّف إلى أدوات الذكاء الاصطناعي واستخداماتها في الدراسة والعمل. تتناول الفعالية كيف يمكن الاستفادة من هذه الأدوات في دعم التعلم وإنجاز المهام وتطوير الأفكار، مع التأكيد على استخدامها بطريقة فعّالة ومسؤولة.</p>
+                                  
+                       <h4 class="h5 fw-bold text-success mt-4 mb-3">معرض صور الفعالية</h4>
+          <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/ai-workshop_1.jpg" class="img-fluid rounded" alt="صورة الفعالية 1" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/ai-workshop_2.jpg" class="img-fluid rounded" alt="صورة الفعالية 2" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/ai-workshop_3.jpg" class="img-fluid rounded" alt="صورة الفعالية 3" style="height: 180px; width: 100%; object-fit: contain;">
+                  </div>
+              </div>
+          </div>
+
+          <h4 class="h5 fw-bold text-success mb-3">موقع انعقاد الفعالية (خريطة الموقع)</h4>
+          <div class="border rounded p-2 bg-light text-center">
+              <img src="assets/img/Damascus1.jpg" class="img-fluid rounded" alt="خريطة الموقع" style="max-height: 500px; width: 100%; object-fit: contain;">
+              <small class="text-muted d-block mt-2">خريطة توضيحية لمقر انعقاد الورشة في كلية الهندسة المعلوماتية في دمشق </small>
+
+                    </div>
+                </div>
+             <section class="mt-5 pt-3 border-top">
+                <h4 class="h6 fw-bold mb-3 text-success">فعاليات ذات صلة</h4>
+                <div class="row g-3">
+                   <div class="col-md-4">
+                        <div class="card h-100 border shadow-sm bg-light">
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold small">معرض التكنولوجيا والابتكار</h6>
+                                <p class="card-text text-muted small">  معرض مخصص لعرض المشاريع الطلابية في مجالات الذكاء الاصطناعي والبرمجة وتطوير الويب</p>
+                                <a href="event.html?id=tech-exhibition" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                    </div> 
+                      <div class="col-md-4">
+                        <div class="card h-100 border shadow-sm bg-light">
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold small">ورشة إعداد السيرة الذاتية</h6>
+                                <p class="card-text text-muted small">تدريب الطلاب والخريجين على كتابة سيرة ذاتية احترافية.</p>
+                                <a href="event.html?id=cv-workshop" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+            </div>
+
+
+            <div class="event-detail-section" id="tech-exhibition" style="display: none;">
+                <div class="bg-white p-4 rounded shadow-sm border mb-4 soft-card">
+                    <span class="badge bg-success bg-opacity-10 text-success mb-2">تكنولوجيا وابتكار</span>
+                    <h2 class="fw-bold text-success mb-3">معرض التكنولوجيا والابتكار</h2>
+                    <p class="text-secondary mb-4">معرض مخصص لعرض المشاريع الطلابية في مجالات الذكاء الاصطناعي والبرمجة وتطوير الويب.</p>
+                    <div class="row mb-4 align-items-center">
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>📅 التاريخ:</strong> 18 كانون الأول 2026</p>
+                            <p class="mb-2"><strong>📍 الموقع والمحافظة:</strong>    الحسكة - شارع المحافظ - مركز المستقبل</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <button class="btn btn-success btn-sm me-1 mb-2" data-bs-toggle="modal" data-bs-target="#bookingModal">🎟️ احجز مقعدك</button>
+                            <button class="btn btn-outline-success btn-sm me-1 mb-2" onclick="alert('تمت إضافة الفعالية إلى التقويم بنجاح!')">📅 أضف للتقويم</button>
+                            <button class="btn btn-outline-secondary btn-sm mb-2" onclick="alert('تم نسخ رابط الفعالية للمشاركة!')">🔗 شارك</button>
+                        </div>
+                    </div>
+                    <h4 class="h5 fw-bold text-success mb-2">تفاصيل الفعالية</h4>
+                    <p class="text-muted">معرض مخصص لعرض المشاريع الطلابية في مجالات الذكاء الاصطناعي والبرمجة وتطوير الويب وغيرها من مجالات تكنولوجيا المعلومات. يتيح المعرض التعرف إلى أفكار ومشاريع الطلاب ومشاهدة نماذج من الأعمال التقنية التي طوّروها، كما يشجع على تبادل الخبرات.</p>
+                           
+                       <h4 class="h5 fw-bold text-success mt-4 mb-3">معرض صور الفعالية</h4>
+          <div class="row g-3 mb-4">
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/technology-exhibition_1.jpg" class="img-fluid rounded" alt="صورة الفعالية 1" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/technology-exhibition_2.jpg" class="img-fluid rounded" alt="صورة الفعالية 2" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="border rounded bg-light p-1 text-center h-100">
+                      <img src="assets/img/technology-exhibition_3.jpg" class="img-fluid rounded" alt="صورة الفعالية 3" style="height: 180px; width: 100%; object-fit: cover;">
+                  </div>
+              </div>
+          </div>
+          <h4 class="h5 fw-bold text-success mb-3">موقع انعقاد الفعالية (خريطة الموقع)</h4>
+          <div class="border rounded p-2 bg-light text-center">
+              <img src="assets/img/Hasakah.jpg" class="img-fluid rounded" alt="خريطة الموقع" style="max-height: 500px; width: 100%; object-fit: contain;">
+              <small class="text-muted d-block mt-2">خريطة توضيحية لمقر  اقامة المعرض في الحسكة شارع المحافظ  </small>
+
+                    </div>
+                </div>
+             <section class="mt-5 pt-3 border-top">
+                <h4 class="h6 fw-bold mb-3 text-success">فعاليات ذات صلة</h4>
+                <div class="row g-3">
+                   <div class="col-md-4">
+                        <div class="card h-100 border shadow-sm bg-light">
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold small">ورشة الذكاء الاصطناعي وتطبيقاته</h6>
+                                <p class="card-text text-muted small">ورشة تفاعلية للتعرّف إلى أدوات الذكاء الاصطناعي واستخداماتها الأكاديمية</p>
+                                <a href="event.html?id=ai-workshop" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                    </div> 
+                      <div class="col-md-4">
+                        <div class="card h-100 border shadow-sm bg-light">
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold small">معرض التراث السوري والحرف</h6>
+                                <p class="card-text text-muted small">  التعريف بتنوع التراث الثقافي السوري والحرف التقليدية والموروث المعماري</p>
+                                <a href="event.html?id=heritage-exhibition" class="btn btn-sm btn-outline-success mt-2">عرض التفاصيل</a>
+                            </div>
+                        </div>
+                    </div> 
+                    </div>
+            </section>
+            </div>
+            </div>
+    </main>
+
+<!-- Modal window containing a form for entering user details and confirming event booking -->
+       <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title fw-bold" id="bookingModalLabel">حجز مقعد في الفعالية</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+                <!-- Collects booking information and validates required fields before submission -->
+                <form id="bookingForm">
+                    <div class="modal-body">
+                        <p class="text-muted small mb-3">يرجى إدخال معلوماتك الشخصية لتأكيد حجز مقعدك في الفعالية.</p>
+                        
+                        <div class="mb-3">
+                            <label for="userName" class="form-label fw-bold">الاسم الكامل <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="userName" placeholder="أدخل اسمك الثلاثي" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="userPhone" class="form-label fw-bold">رقم الهاتف <span class="text-danger">*</span></label>
+                           <input type="tel" class="form-control" id="userPhone" placeholder="09xxxxxxxx" required pattern="09[0-9]{8}"
+                               minlength="10"  maxlength="10"  inputmode="numeric">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label fw-bold">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="example@domain.com"required>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">إلغاء</button>
+                        <button type="submit" class="btn btn-success btn-sm">تأكيد الحجز</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-top py-4 text-center text-muted">
+        <div class="container">
+            <p class="fw-bold mb-2">دليل فعاليات الجامعة الافتراضية</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
+                <a href="contact.html" class="text-decoration-none text-muted">اتصل بنا</a>
+                <a href="https://www.svuonline.org" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">موقع الجامعة</a>
+                <a href="https://www.facebook.com/share/1KpsExHP4W/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">فيسبوك</a>
+            </div>
+            <p class="mb-0 small">جميع الحقوق محفوظة &copy; 2026 - دليل فعاليات الجامعة الافتراضية</p>
+        </div>
+    </footer>
+
+<!-- Load JavaScript files to manage event details, interactions, and the booking form -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

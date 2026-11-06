@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع الفعاليات | دليل فعاليات الجامعة الافتراضية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center fw-bold text-success" href="index.html">
+                    <img src="assets/img/logo.jfif" alt="شعار الجامعة" width="40" height="40" class="me-2 ms-2">
+                    <span>دليل الفعاليات</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link active text-success fw-bold" href="events.html">الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="event.html">تفاصيل الفعالية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+ <main class="container py-5">
+        <h1 class="fw-bold mb-3 text-success text-center">دليل الفعاليات المتاحة</h1>
+        <p class="text-muted text-center mb-5">استعرض كافة الفعاليات والأنشطة الأكاديمية والثقافية والمهنية المقامة في الجامعة.</p>
+        <!-- Search and filter section helps users find events by name, category, date, and location -->
+        <div class="bg-white p-4 rounded shadow-sm border mb-4 soft-card">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label for="searchInput" class="form-label fw-bold">البحث باسم الفعالية</label>
+                    <input type="text" id="searchInput" class="form-control" placeholder="اكتب للبحث...">
+                </div>
+                <div class="col-md-3">
+                    <label for="categoryFilter" class="form-label fw-bold">التصنيف</label>
+                    <select id="categoryFilter" class="form-select">
+                        <option value="">جميع التصنيفات</option>
+                        <option value="academic">فعاليات أكاديمية ومعرفية</option>
+                        <option value="career">تطوير مهني</option>
+                        <option value="community">ثقافة ومجتمع</option>
+                        <option value="technology">تكنولوجيا وابتكار</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="dateFilter" class="form-label fw-bold">التاريخ</label>
+                    <input type="date" id="dateFilter" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <label for="locationFilter" class="form-label fw-bold">المحافظة / الموقع</label>
+                    <select id="locationFilter" class="form-select">
+                        <option value="">جميع المواقع</option>
+                        <option value="دمشق">دمشق</option>
+                        <option value="حمص">حمص</option>
+                        <option value="حلب">حلب</option>
+                        <option value="حماة">حماة</option>
+                        <option value="اللاذقية">اللاذقية</option>
+                         <option value="الحسكة">الحسكة</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Displays the number of matching events and provides a filter reset option -->
+            <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
+                <span id="resultsCount" class="fw-bold text-success">عدد الفعاليات المعروضة: 7</span>
+                <button id="resetFilters" type="button" class="btn btn-outline-secondary btn-sm">إعادة تعيين الفلاتر</button>
+            </div>
+        </div>
+
+        <div id="noResults" class="alert alert-warning text-center d-none" role="alert">
+            لا توجد فعاليات مطابقة لخيارات البحث المحددة.
+        </div>
+
+         <!-- data-category, data-location, and data-date attributes are used by JavaScript to filter events -->
+            <div class="row g-4" id="eventsListGrid">
+
+            <div class="col-md-4 event-item" data-category="academic" data-location="حمص" data-date="2026-11-21">
+                <div class="card h-100 border shadow-sm soft-card bg-white">
+                    <img src="assets/img/Research3.jpg" class="card-img-top" alt="ندوة البحث العلمي" style="height: 190px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2">فعاليات أكاديمية ومعرفية</span>
+                        <h5 class="card-title fw-bold">ندوة مهارات البحث العلمي</h5>
+                        <p class="card-text text-muted small">تعريف الطلاب بأساليب إعداد البحوث الجامعية والتوثيق العلمي والمراجع.</p>
+                        <div class="small text-secondary mt-2">📍 حمص – جامعة حمص</div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                        <small class="text-muted">21 تشرين الثاني 2026</small>
+                        <a href="event.html?id=research-seminar" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="academic" data-location="دمشق" data-date="2026-11-15">
+                <div class="card h-100 border shadow-sm soft-card bg-white">
+                    <img src="assets/img/graduation.jpg" class="card-img-top" alt="حفل التخرج السنوي" style="height: 190px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2">فعاليات أكاديمية ومعرفية</span>
+                        <h5 class="card-title fw-bold">حفل التخرج السنوي لعام 2026</h5>
+                        <p class="card-text text-muted small">احتفال بخريجي الجامعة الافتراضية السورية لعام 2026 وتكريم المتفوقين.</p>
+                        <div class="small text-secondary mt-2">📍 دمشق - مقر الجامعة الافتراضية</div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                        <small class="text-muted">15 تشرين الثاني 2026</small>
+                        <a href="event.html?id=graduation" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="career" data-location="حماة" data-date="2026-11-28">
+                <div class="card h-100 border shadow-sm soft-card bg-white">
+                    <img src="assets/img/cv.jpg" class="card-img-top" alt="ورشة السيرة الذاتية" style="height: 190px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2">تطوير مهني</span>
+                        <h5 class="card-title fw-bold">ورشة إعداد السيرة الذاتية</h5>
+                        <p class="card-text text-muted small">تدريب الطلاب والخريجين على كتابة سيرة ذاتية احترافية والمقابلات الوظيفية.</p>
+                        <div class="small text-secondary mt-2">📍 حماة- الشارع الرئيسسي</div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                        <small class="text-muted">28 تشرين الثاني 2026</small>
+                        <a href="event.html?id=cv-workshop" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="community" data-location="اللاذقية" data-date="2026-12-03">
+                <div class="card h-100 border shadow-sm soft-card bg-white">
+                    <img src="assets/img/Heritage1.jpg" class="card-img-top" alt="معرض التراث" style="height: 190px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2">ثقافة ومجتمع</span>
+                        <h5 class="card-title fw-bold">معرض التراث السوري والحرف</h5>
+                        <p class="card-text text-muted small">التعريف بتنوع التراث الثقافي السوري والحرف التقليدية والموروث المعماري.</p>
+                        <div class="small text-secondary mt-2">📍 اللاذقية- جامعة اللاذقية</div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                        <small class="text-muted">03 كانون الأول 2026</small>
+                        <a href="event.html?id=heritage-exhibition" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="community" data-location="حلب" data-date="2026-11-12">
+                <div class="card h-100 border shadow-sm soft-card bg-white">
+                    <img src="assets/img/Volunteer1.jpg" class="card-img-top" alt="ملتقى المبادرات" style="height: 190px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2">ثقافة ومجتمع</span>
+                        <h5 class="card-title fw-bold">ملتقى المبادرات التطوعية</h5>
+                        <p class="card-text text-muted small">عرض المبادرات الطلابية والتطوعية في مجالات التعليم ومساعدة المجتمع.</p>
+                        <div class="small text-secondary mt-2">📍 حلب - جامعة حلب</div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                        <small class="text-muted">12 تشرين الثاني 2026</small>
+                        <a href="event.html?id=volunteer-forum" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="technology" data-location="دمشق" data-date="2026-12-12">
+                <div class="card h-100 border shadow-sm soft-card bg-white">
+                    <img src="assets/img/ai-workshop.jpg" class="card-img-top" alt="ورشة الذكاء الاصطناعي" style="height: 190px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2">تكنولوجيا وابتكار</span>
+                        <h5 class="card-title fw-bold">ورشة الذكاء الاصطناعي وتطبيقاته</h5>
+                        <p class="card-text text-muted small">ورشة تفاعلية للتعرّف إلى أدوات الذكاء الاصطناعي واستخداماتها الأكاديمية.</p>
+                        <div class="small text-secondary mt-2">📍 دمشق - الهمك - كلية الهندسة المعلوماتية</div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                        <small class="text-muted">12 كانون الأول 2026</small>
+                        <a href="event.html?id=ai-workshop" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="technology" data-location="الحسكة" data-date="2026-12-18">
+                <div class="card h-100 border shadow-sm soft-card bg-white">
+                    <img src="assets/img/technology-exhibition.jpg" class="card-img-top" alt="معرض التكنولوجيا" style="height: 190px; object-fit: cover;">
+                    <div class="card-body">
+                        <span class="badge bg-success bg-opacity-10 text-success mb-2">تكنولوجيا وابتكار</span>
+                        <h5 class="card-title fw-bold">معرض التكنولوجيا والابتكار</h5>
+                        <p class="card-text text-muted small">عرض المشاريع الطلابية في البرمجة وتطوير الويب والذكاء الاصطناعي.</p>
+                        <div class="small text-secondary mt-2">📍 الحسكة - شارع المحافظ</div>
+                    </div>
+                    <div class="card-footer bg-white border-top-0 d-flex justify-content-between align-items-center pb-3">
+                        <small class="text-muted">18 كانون الأول 2026</small>
+                        <a href="event.html?id=tech-exhibition" class="btn btn-sm btn-outline-success">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+ </main>
+
+    <footer class="bg-white border-top py-4 text-center text-muted">
+        <div class="container">
+            <p class="fw-bold mb-2">دليل فعاليات الجامعة الافتراضية</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
+                <a href="contact.html" class="text-decoration-none text-muted">اتصل بنا</a>
+                <a href="https://www.svuonline.org" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">موقع الجامعة</a>
+                <a href="https://www.facebook.com/share/1KpsExHP4W/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-muted">فيسبوك</a>
+            </div>
+            <p class="mb-0 small">جميع الحقوق محفوظة &copy; 2026 - دليل فعاليات الجامعة الافتراضية</p>
+        </div>
+    </footer>
+    <!-- Load JavaScript files to enable interactive features on the events page -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
